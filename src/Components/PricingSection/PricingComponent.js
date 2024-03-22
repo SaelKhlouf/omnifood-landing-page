@@ -100,9 +100,13 @@ function PricingComponent() {
         <PricingCardComponent {...plans[1]}></PricingCardComponent>
       </div>
 
-      <aside></aside>
+      <aside>
+        {" "}
+        Prices include all applicable taxes. You can cancel at any time. Both
+        plans include the following:
+      </aside>
 
-      <div className="plans-details-container">
+      <div className="plans-shared-features-container">
         {plansDetails.map((planDetails) => (
           <PricingFeatureComponent
             key={planDetails.id}

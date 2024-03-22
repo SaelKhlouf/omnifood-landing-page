@@ -40,11 +40,13 @@ body {
   --fw-100: 400;
   --fw-200: 500;
   --fw-300: 600;
+  --fw-400: 700;
 
   /* line heights */
   --lh-100: 1;
   --lh-200: 1.2;
   --lh-300: 1.5;
+  --lh-400: 1.8;
 
   /* whitespaces */
   --ws-100: 1.6rem;
@@ -304,6 +306,7 @@ img {
 .svg {
   max-width: 3rem;
   stroke: var(--color-1-100);
+  fill: var(--color-1-100);
 }
 
 .meals-section-content {
@@ -390,7 +393,7 @@ img {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .meals-section-all-recipes:link,
@@ -575,4 +578,47 @@ img {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.pricing-section aside {
+  margin-top: 4.6rem;
+  margin-bottom: 9.6rem;
+  text-align: center;
+  font-size: var(--fs-100);
+}
+
+.plans-shared-features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.feature {
+  max-width: 24rem;
+  justify-self: center;
+}
+
+.feature h3 {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  line-height: var(--lh-100);
+}
+
+.feature p {
+  font-size: var(--fs-100);
+  line-height: var(--lh-400);
+}
+
+.pricing-feature-svg {
+  background-color: var(--color-1-90);
+  color: var(--color-1-100);
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 1rem;
+  border-radius: 50rem;
 }

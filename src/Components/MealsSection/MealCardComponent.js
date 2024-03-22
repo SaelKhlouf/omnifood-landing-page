@@ -1,6 +1,10 @@
 import TagComponent from "./TagComponent";
 import DietColorEnum from "./DietsEnum";
-import { IoRestaurantOutline, IoFlameOutline } from "react-icons/io5";
+import {
+  IoRestaurantOutline,
+  IoFlameOutline,
+  IoStarOutline,
+} from "react-icons/io5";
 
 function MealCardComponent({
   id,
@@ -42,15 +46,16 @@ function MealCardComponent({
             <IoRestaurantOutline size="2.5rem" className="svg" />
 
             <div className="fs-100">
-              <span className="fw-300">{calories}</span> calories
+              NutriScore ® <span className="fw-300">{nutriScore}</span>
             </div>
           </li>
 
           <li className="meal-feature-list-item">
-            <IoRestaurantOutline size="2.5rem" className="svg" />
+            <IoStarOutline size="2.5rem" className="svg" />
 
             <div className="fs-100">
-              <span className="fw-300">{calories}</span> calories
+              <span className="fw-300">{rating}</span> rating{" "}
+              {`(${numberOfRatings})`}
             </div>
           </li>
         </ul>
