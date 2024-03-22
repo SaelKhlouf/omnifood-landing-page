@@ -14,6 +14,8 @@ body {
 
   --color-2-100: white;
 
+  --color-3-100: #ffd43b;
+
   --color-grey-100: #343a40;
   --color-grey-150: #5e666f;
   --color-grey-200: #ced4da;
@@ -74,6 +76,7 @@ ul {
 
 img {
   max-width: 100%;
+  display: inline-block;
 }
 
 .margin-right-100 {
@@ -509,12 +512,11 @@ img {
 /* Pricing Section */
 .pricing-plans {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  justify-items: center;
   gap: 2rem;
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 120rem;
 }
 
 .pricing-section-secondary-header-container {
@@ -522,6 +524,7 @@ img {
 }
 
 .pricing-section {
+  margin-bottom: 14.4rem;
 }
 
 .pricing-card {
@@ -536,6 +539,20 @@ img {
 
 .pricing-card--featured {
   background-color: var(--color-1-90);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card--featured::after {
+  content: "BEST VALUE";
+  position: absolute;
+  top: 5%;
+  right: -20%;
+  background-color: var(--color-3-100);
+  padding: 0.6rem 8rem;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-90);
+  transform: rotate(45deg);
 }
 
 .pricing-card-header {
