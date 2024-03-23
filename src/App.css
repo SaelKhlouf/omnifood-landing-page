@@ -9,8 +9,8 @@ body {
   /* colors */
   --color-1-90: #fff4e6;
   --color-1-100: #e67e22;
-
   --color-1-200: #c36512;
+  --color-1-300: #462e17;
 
   --color-2-100: white;
 
@@ -28,6 +28,8 @@ body {
   font-size: 1.6rem;
 
   --fs-90: 1.2rem;
+  --fs-93: 1.4rem;
+  --fs-95: 1.6rem;
   --fs-100: 1.8rem;
   --fs-200: 2rem;
   --fs-300: 2.304rem;
@@ -59,6 +61,11 @@ body {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none; /* this is the blue border that shows when you focus on a element, like pressing on <intput> element */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 ul {
   list-style: none;
 }
@@ -87,6 +94,7 @@ img {
   margin-top: 4.8rem;
 }
 
+.btn-cta,
 .btn:link,
 .btn:visited {
   border-radius: 0.8rem;
@@ -638,4 +646,166 @@ img {
   fill: currentColor;
   padding: 1rem;
   border-radius: 50rem;
+}
+
+/* CTA */
+
+.cta-section {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 120rem;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 12rem;
+  color: var(--color-1-300);
+}
+
+.cta-section *:focus {
+  outline: none; /* this is the blue border that shows when you focus on a element, like pressing on <intput> element */
+  box-shadow: 0 0 0 0.8rem rgba(238, 211, 187, 0.5);
+}
+
+.cta-content {
+  padding: 6rem 8rem;
+}
+
+.cta-content-header {
+  font-size: var(--fs-700);
+  line-height: var(--lh-100);
+  margin-bottom: 3.2rem;
+}
+
+.cta-content-text {
+  font-size: var(--fs-100);
+  line-height: var(--lh-300);
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form-label {
+  font-size: var(--fs-95);
+  line-height: var(--lh-300);
+  font-weight: var(--fw-400);
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.cta-figure {
+  margin: 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(../public/img/eating.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+/* remember that :link, :visited, :active do not work with elements that do not have href attribute */
+.btn-cta-form {
+  color: #fdf2e9;
+  background-color: #45260a;
+  transition: all 0.3s;
+  align-self: end;
+  text-align: center;
+  padding: 1.2rem;
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: var(--color-1-90);
+  color: var(--color-1-300);
+  cursor: pointer;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer section */
+.footer-section {
+  padding: 13rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 2rem;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-item-heading {
+  margin-bottom: 4rem;
+}
+
+.footer-item-heading p {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-300);
+}
+
+.footer-section a {
+  font-size: var(--fs-95);
+  color: var(--color-grey-150);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #353535;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.svg-footer-social {
+  filter: opacity(80%);
+}
+
+.svg-footer-social:hover {
+  filter: opacity(100%);
+  cursor: pointer;
+}
+
+.footer-copyright {
+  margin-top: auto;
+  font-size: var(--fs-93);
+  line-height: var(--lh-300);
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }

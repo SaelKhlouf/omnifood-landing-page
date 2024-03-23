@@ -1,5 +1,7 @@
 import "./App.css";
+import CtaComponent from "./Components/CtaSection/CtaComponent";
 import FeaturedComponent from "./Components/FeaturedSection/FeaturedComponent";
+import FooterComponent from "./Components/FooterSection/FooterComponent";
 import HeaderComponent from "./Components/Header/HeaderComponent";
 import HeroComponent from "./Components/HeroSection/HeroComponent";
 import HowComponent from "./Components/HowSection/HowComponent";
@@ -19,7 +21,10 @@ function App() {
         <MealsComponent></MealsComponent>
         <TestimonialsSectionComponent></TestimonialsSectionComponent>
         <PricingComponent></PricingComponent>
+        <CtaComponent></CtaComponent>
       </main>
+
+      <FooterComponent></FooterComponent>
     </>
   );
 }
