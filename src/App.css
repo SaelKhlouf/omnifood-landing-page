@@ -8,6 +8,7 @@ body {
 
   /* colors */
   --color-1-90: #fff4e6;
+  --color-1-95: #fce0bb;
   --color-1-100: #e67e22;
   --color-1-200: #c36512;
   --color-1-300: #462e17;
@@ -312,6 +313,37 @@ img {
 .how-image-box {
   justify-self: center;
   align-self: center;
+  position: relative;
+}
+
+.how-image-box::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 60%;
+  /* height: 60%; and width: 60% won't show anything! you need to specify padding to work around that */
+  padding: 85% 60%;
+  background-color: var(--color-1-90);
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.how-image-box::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 60%;
+  /* height: 60%; and width: 60% won't show anything! you need to specify padding to work around that */
+  padding: 75% 40%;
+  background-color: var(--color-1-95);
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .svg {
