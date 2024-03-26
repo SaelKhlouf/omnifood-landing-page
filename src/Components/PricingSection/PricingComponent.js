@@ -88,14 +88,14 @@ function PricingComponent() {
   ];
   return (
     <section className="pricing-section">
-      <div className="secondary-header-container pricing-section-secondary-header-container">
+      <div className="container">
         <p className="subheading">pricing</p>
-        <h2 className="secondary-header">
+        <h2 className="heading-secondary">
           Eating well without breaking the bank
         </h2>
       </div>
 
-      <div className="pricing-plans">
+      <div className="container pricing-plans">
         <PricingCardComponent {...plans[0]}></PricingCardComponent>
         <PricingCardComponent {...plans[1]}></PricingCardComponent>
       </div>
@@ -106,7 +106,7 @@ function PricingComponent() {
         plans include the following:
       </aside>
 
-      <div className="plans-shared-features-container">
+      <div className="container plans-shared-features-container">
         {plansDetails.map((planDetails) => (
           <PricingFeatureComponent
             key={planDetails.id}

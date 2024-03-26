@@ -14,11 +14,11 @@ function HeroComponent() {
           <div className="hero-content-links">
             <a
               href="#"
-              className="btn btn--primary btn--padding-200 margin-right-100"
+              className="btn btn-primary btn-padding-200 margin-right-100"
             >
               Start eating well
             </a>
-            <a href="#" className="btn btn--outline btn--padding-200">
+            <a href="#" className="btn btn-outline btn-padding-200">
               Learn more &darr;
             </a>
           </div>

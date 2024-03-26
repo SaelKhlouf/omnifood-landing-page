@@ -7,7 +7,7 @@ import {
 function FooterComponent() {
   return (
     <footer className="footer-section">
-      <div className="footer-container">
+      <div className="container footer-container">
         <div className="footer-item logo-col">
           <div className="footer-item-heading">
             <img className="logo" src="./img/omnifood-logo.png"></img>

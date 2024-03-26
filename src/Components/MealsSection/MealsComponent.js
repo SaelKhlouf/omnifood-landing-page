@@ -26,27 +26,27 @@ function MealsComponent() {
 
   return (
     <section className="meals-section">
-      <div className="secondary-header-container meals-section-secondary-header-container">
+      <div className="container center-text">
         <p className="subheading">meals</p>
-        <h2 className="secondary-header">
+        <h2 className="heading-secondary">
           Omnifood AI chooses from 5,000+ recipes
         </h2>
       </div>
 
-      <div className="meals-section-content">
+      <div className="container meals-section-content grid">
         <MealCardComponent {...recipes[0]}></MealCardComponent>
 
         <MealCardComponent {...recipes[1]}></MealCardComponent>
 
         <div>
-          <h3 className="means-section-diets-subheading">
+          <h3 className="meals-section-diets-subheading">
             Works with any diet:
           </h3>
-          <ul className="means-section-diets-list">
+          <ul className="meals-section-diets-list">
             {Object.keys(DietColorEnum).map((dietName) => (
-              <li key={dietName} className="means-section-diets-list-item">
+              <li key={dietName} className="meals-section-diets-list-item">
                 <IoCheckmark className="svg" size="3rem" />
-                <span className="means-section-diets-list-item-name">
+                <span className="meals-section-diets-list-item-name">
                   {dietName}
                 </span>
               </li>
@@ -55,8 +55,8 @@ function MealsComponent() {
         </div>
       </div>
 
-      <div className="meals-section-all-recipes-container">
-        <a className="meals-section-all-recipes" href="#">
+      <div className="container center-text all-recipes">
+        <a className="link" href="#">
           See all recipes &#10141;
         </a>
       </div>

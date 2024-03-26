@@ -1,0 +1,125 @@
+/* in the first line of media quey @media (max-width: ), 
+rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px 
+but inside the curley brackets '{}' => it ema nd rem works as before, 1 rem = 10px (because of 62.5% trick)
+*/
+
+/**************************/
+/* BELOW 1360px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 85em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%; /* decreased from 16px to 9px. */
+  }
+
+  /*referencing rem here means 10px and not 9px ! */
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .header-nav {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+
+  /**************************/
+  /* BELOW 944px (tablets) */
+  /**************************/
+  @media (max-width: 59em) {
+    html {
+      font-size: 50%; /* decreased from 16px to 8px. */
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 0 8rem;
+      gap: 8rem;
+    }
+
+    .hero-image {
+      max-width: 70%;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .delivered-meals {
+      margin-top: 4.8rem;
+      justify-content: center;
+    }
+
+    .featured-img {
+      height: 2.3rem;
+    }
+
+    .step-number {
+      font-size: var(--fs-750);
+    }
+
+    .meal-card-content {
+      padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+    }
+
+    .testimonials-section {
+      grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+      grid-template-columns: 60fr 40fr;
+    }
+
+    .cta-content {
+      padding: 3.2rem 4.8rem;
+    }
+
+    .cta-form {
+      grid-template-columns: 1fr;
+    }
+
+    .btn-cta-form {
+      margin-top: 1.6rem;
+    }
+  }
+}

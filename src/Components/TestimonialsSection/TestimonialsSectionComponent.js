@@ -31,12 +31,10 @@ function TestimonialsSectionComponent() {
   return (
     <div className="testimonials-section">
       <div className="testimonials-container">
-        <div className="secondary-header-container">
-          <p className="subheading">testimonials</p>
-          <h2 className="secondary-header">
-            Once you try it, you can't go back
-          </h2>
-        </div>
+        <p className="subheading">testimonials</p>
+        <h2 className="heading-secondary">
+          Once you try it, you can't go back
+        </h2>
 
         <div className="testimonials-list">
           {testimonialsData.map((testimonialData) => (

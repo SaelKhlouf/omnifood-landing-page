@@ -16,7 +16,7 @@ function HeaderComponent() {
           Pricing
         </a>
         {/* nav-cta means if this is pressed it will lead to cta section in the page */}
-        <a href="#" className="btn btn--primary btn--padding-100">
+        <a href="#" className="btn btn-primary btn-padding-100">
           Try for free
         </a>
       </nav>

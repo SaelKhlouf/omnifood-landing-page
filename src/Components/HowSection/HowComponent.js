@@ -24,14 +24,14 @@ function HowComponent() {
 
   return (
     <section className="how-section">
-      <div className="secondary-header-container">
+      <div className="container">
         <p className="subheading">how it works</p>
-        <h2 className="secondary-header">
+        <h2 className="heading-secondary">
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
 
-      <div className="how-steps">
+      <div className="how-steps container grid">
         <StepComponent {...steps[0]}></StepComponent>
         <div className="how-image-box">
           <img src="./img/app/app-screen-1.png" className="how-image"></img>

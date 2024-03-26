@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Queries.css";
 import CtaComponent from "./Components/CtaSection/CtaComponent";
 import FeaturedComponent from "./Components/FeaturedSection/FeaturedComponent";
 import FooterComponent from "./Components/FooterSection/FooterComponent";
