@@ -87,7 +87,7 @@ function PricingComponent() {
     },
   ];
   return (
-    <section className="pricing-section">
+    <section id="pricing" className="pricing-section">
       <div className="container">
         <p className="subheading">pricing</p>
         <h2 className="heading-secondary">

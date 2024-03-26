@@ -29,7 +29,7 @@ function TestimonialsSectionComponent() {
   ];
 
   return (
-    <div className="testimonials-section">
+    <div id="testimonials" className="testimonials-section">
       <div className="testimonials-container">
         <p className="subheading">testimonials</p>
         <h2 className="heading-secondary">

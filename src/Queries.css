@@ -121,5 +121,50 @@ but inside the curley brackets '{}' => it ema nd rem works as before, 1 rem = 10
     .btn-cta-form {
       margin-top: 1.6rem;
     }
+
+    .mobile-btn-nav {
+      display: block;
+      z-index: 2;
+    }
+
+    .header {
+      position: relative;
+    }
+
+    .header-nav {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      /* 
+      I used opacity instead of display 
+      because transition doesn't work on display: none 
+      */
+      transform: translateX(100%);
+      transition: all 0.5s;
+      z-index: 1;
+      display: block;
+      position: absolute;
+      background-color: var(--color-1-90);
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: var(--fs-700);
+      gap: 4.8rem;
+    }
+
+    .header-nav-open {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    .header-nav-open .btn-primary {
+      font-size: var(--fs-700);
+    }
   }
 }

@@ -23,7 +23,7 @@ function HowComponent() {
   ];
 
   return (
-    <section className="how-section">
+    <section id="how" className="how-section">
       <div className="container">
         <p className="subheading">how it works</p>
         <h2 className="heading-secondary">

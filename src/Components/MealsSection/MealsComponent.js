@@ -25,7 +25,7 @@ function MealsComponent() {
   ];
 
   return (
-    <section className="meals-section">
+    <section id="meals" className="meals-section">
       <div className="container center-text">
         <p className="subheading">meals</p>
         <h2 className="heading-secondary">

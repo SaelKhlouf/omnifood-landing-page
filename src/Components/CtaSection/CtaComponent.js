@@ -1,6 +1,6 @@
 function CtaComponent() {
   return (
-    <section className="cta-section">
+    <section id="cta" className="cta-section">
       <div className="container">
         <div className="cta">
           <div className="cta-content">

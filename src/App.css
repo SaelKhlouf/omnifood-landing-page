@@ -53,6 +53,13 @@ body {
   --lh-300: 1.2;
   --lh-350: 1.6;
   --lh-400: 1.8;
+
+  overflow-x: hidden;
+  /*
+  this is because on mobile, the header nav is hidden on the right after the content you see,
+  I did that so that it will create a nice animation after use opens the mobile nav menu
+  overflow-x:hidden will basically remove the horizontal scrollbar
+  */
 }
 
 * {
@@ -164,7 +171,7 @@ img {
   text-decoration: none;
   font-size: var(--fs-200);
   font-weight: var(--fw-300);
-  transition: all 1s;
+  transition: background-color 1s;
 }
 
 /* two dashes basically this class will be used along with a base class like btn. to make the btn specific more */
@@ -228,6 +235,19 @@ img {
 
 .header-nav-links {
   color: var(--color-grey-100);
+}
+
+.mobile-btn-nav {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
+}
+
+.mobile-nav-menu-icon {
+}
+
+.mobile-nav-close-icon {
 }
 
 /* hero section */
