@@ -167,4 +167,127 @@ but inside the curley brackets '{}' => it ema nd rem works as before, 1 rem = 10
       font-size: var(--fs-700);
     }
   }
+
+  /**************************/
+  /* BELOW 700px (smaller tablets) */
+  /**************************/
+  @media (max-width: 44em) {
+    .meals-section-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+      justify-self: center;
+      grid-column: span 2;
+    }
+
+    .heading-secondary {
+      margin-bottom: 4.8rem;
+    }
+
+    .footer-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .account-col,
+    .company-col,
+    .resources-col {
+      grid-row: 1;
+      grid-column: span 2;
+    }
+
+    .logo-col,
+    .contact-col {
+      grid-row: 2;
+      grid-column: span 3;
+    }
+
+    .featured-img {
+      height: 1.8rem;
+    }
+  }
+
+  /**************************/
+  /* BELOW 570px (phones) */
+  /**************************/
+  @media (max-width: 35.625em) {
+    .pricing-plans {
+      grid-template-columns: 1fr;
+    }
+
+    .plans-shared-features-container {
+      grid-template-columns: 1fr;
+    }
+
+    .cta {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-figure {
+      grid-row: 1;
+      height: 35rem;
+      background-position: center;
+    }
+
+    .cta-content {
+      grid-row: 2;
+    }
+
+    .hero-content-links .btn-outline {
+      margin-top: 2rem;
+    }
+
+    .delivered-meals {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .hero-image {
+      max-width: 85%;
+    }
+
+    .featured-img {
+      height: 1.2rem;
+    }
+
+    .testimonials-list {
+      grid-template-columns: 1fr;
+    }
+
+    .meals-section-content {
+      grid-template-columns: 1fr;
+    }
+
+    .diets {
+      grid-column: initial;
+    }
+
+    .how-image {
+      max-width: 16rem;
+    }
+
+    .how-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .how-image-box:nth-child(2) {
+      grid-row: 1;
+    }
+
+    .how-image-box:last-child {
+      grid-row: 5;
+    }
+
+    .how-image-box {
+      transform: translateY(9.8rem);
+    }
+
+    .gallery-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .btn-padding-200 {
+      padding: 1.2rem 1.6rem;
+    }
+  }
 }

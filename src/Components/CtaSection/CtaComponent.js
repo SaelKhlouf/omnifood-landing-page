@@ -4,9 +4,7 @@ function CtaComponent() {
       <div className="container">
         <div className="cta">
           <div className="cta-content">
-            <h2 className="cta-content-header">
-              Get your first meal for free!
-            </h2>
+            <h2 className="heading-secondary">Get your first meal for free!</h2>
             <p className="cta-content-text">
               Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime. And the first
@@ -42,7 +40,7 @@ function CtaComponent() {
                   Where did you hear from us?
                 </label>
                 <select id="reference" required={true}>
-                  <option>Please choose one option:</option>
+                  <option>Please choose 🎉</option>
                   <option value="friends">Friends and Family</option>
                   <option value="youtube">Youtube video</option>
                   <option value="podcast">Podcast</option>

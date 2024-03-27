@@ -38,7 +38,7 @@ function MealsComponent() {
 
         <MealCardComponent {...recipes[1]}></MealCardComponent>
 
-        <div>
+        <div className="diets">
           <h3 className="meals-section-diets-subheading">
             Works with any diet:
           </h3>

@@ -2,7 +2,7 @@ import { IoCheckmark, IoCloseOutline } from "react-icons/io5";
 
 function PricingCardComponent({ title, price, desc, features, featured }) {
   return (
-    <div className={`pricing-card ${featured && "pricing-card--featured"}`}>
+    <div className={`pricing-card ${featured && "pricing-card-featured"}`}>
       <header className="pricing-card-header">
         <h3 className="pricing-card-title">{title}</h3>
         <p className="pricing-card-price">

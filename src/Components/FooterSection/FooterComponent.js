@@ -8,7 +8,7 @@ function FooterComponent() {
   return (
     <footer className="footer-section">
       <div className="container footer-container">
-        <div className="footer-item logo-col">
+        <div className="logo-col">
           <div className="footer-item-heading">
             <img className="logo" src="./img/omnifood-logo.png"></img>
           </div>
@@ -32,7 +32,7 @@ function FooterComponent() {
           </p>
         </div>
 
-        <div>
+        <div className="contact-col">
           <div className="footer-item-heading">
             <p>Contact us</p>
           </div>
@@ -48,7 +48,7 @@ function FooterComponent() {
           </div>
         </div>
 
-        <nav>
+        <nav className="account-col">
           <div className="footer-item-heading">
             <p>Account</p>
           </div>
@@ -69,7 +69,7 @@ function FooterComponent() {
           </ul>
         </nav>
 
-        <nav>
+        <nav className="company-col">
           <div className="footer-item-heading">
             <p>Company</p>
           </div>
@@ -90,7 +90,7 @@ function FooterComponent() {
           </ul>
         </nav>
 
-        <nav>
+        <nav className="resources-col">
           <div className="footer-item-heading">
             <p>Resources</p>
           </div>

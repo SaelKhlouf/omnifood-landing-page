@@ -31,10 +31,10 @@ function HeroComponent() {
               <img src="./img/customers/customer-5.jpg"></img>
               <img src="./img/customers/customer-6.jpg"></img>
             </div>
-            <div className="delivered-meals-fact">
-              <div className="delivered-meals-number">250,000+</div> meals
+            <p className="delivered-meals-fact">
+              <span className="delivered-meals-number">250,000+</span> meals
               delivered last year!
-            </div>
+            </p>
           </div>
         </div>
 
