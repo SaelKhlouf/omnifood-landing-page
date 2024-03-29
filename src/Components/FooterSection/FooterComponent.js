@@ -10,7 +10,11 @@ function FooterComponent() {
       <div className="container footer-container">
         <div className="logo-col">
           <div className="footer-item-heading">
-            <img className="logo" src="./img/omnifood-logo.png"></img>
+            <img
+              className="logo"
+              src="./img/omnifood-logo.webp"
+              alt="logo"
+            ></img>
           </div>
 
           <div className="footer-social">

@@ -34,17 +34,29 @@ function HowComponent() {
       <div className="how-steps container grid">
         <StepComponent {...steps[0]}></StepComponent>
         <div className="how-image-box">
-          <img src="./img/app/app-screen-1.png" className="how-image"></img>
+          <img
+            src="./img/app/app-screen-1.webp"
+            className="how-image"
+            alt="app image"
+          ></img>
         </div>
 
         <div className="how-image-box">
-          <img src="./img/app/app-screen-2.png" className="how-image"></img>
+          <img
+            src="./img/app/app-screen-2.webp"
+            className="how-image"
+            alt="app image"
+          ></img>
         </div>
         <StepComponent {...steps[1]}></StepComponent>
 
         <StepComponent {...steps[2]}></StepComponent>
         <div className="how-image-box">
-          <img src="./img/app/app-screen-3.png" className="how-image"></img>
+          <img
+            src="./img/app/app-screen-3.webp"
+            className="how-image"
+            alt="app image"
+          ></img>
         </div>
       </div>
     </section>

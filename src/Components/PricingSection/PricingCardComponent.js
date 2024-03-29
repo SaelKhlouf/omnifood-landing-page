@@ -26,7 +26,7 @@ function PricingCardComponent({ title, price, desc, features, featured }) {
         ))}
       </ul>
 
-      <a href="#" className="btn btn-primary btn-padding-200 margin-top-100">
+      <a href="#cta" className="btn btn-primary btn-padding-200 margin-top-100">
         Start eating well
       </a>
     </div>

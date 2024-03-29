@@ -5,7 +5,7 @@ import { IoCheckmark } from "react-icons/io5";
 function MealsComponent() {
   const recipes = [
     {
-      id: "meal-1.jpg",
+      id: "meal-1.webp",
       diets: ["VEGETARIAN"],
       title: "Japanese Gyozas",
       calories: 650,
@@ -14,7 +14,7 @@ function MealsComponent() {
       numberOfRatings: 537,
     },
     {
-      id: "meal-2.jpg",
+      id: "meal-2.webp",
       diets: ["VEGAN", "PALEO"],
       title: "Avocado Salad",
       calories: 400,
@@ -56,7 +56,7 @@ function MealsComponent() {
       </div>
 
       <div className="container center-text all-recipes">
-        <a className="link" href="#">
+        <a className="link" href="#meals">
           See all recipes &#10141;
         </a>
       </div>

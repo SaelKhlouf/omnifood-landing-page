@@ -6,7 +6,7 @@ function HeaderComponent() {
 
   return (
     <header className="header">
-      <img className="logo" src="./img/omnifood-logo.png"></img>
+      <img className="logo" src="./img/omnifood-logo.webp" alt="logo"></img>
       <nav
         className={`header-nav ${
           overlayNavOpened === true ? "header-nav-open" : ""

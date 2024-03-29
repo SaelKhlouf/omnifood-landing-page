@@ -1,19 +1,19 @@
 function FeaturedComponent() {
   const logos = [
     {
-      id: "business-insider.png",
+      id: "business-insider.webp",
     },
     {
-      id: "forbes.png",
+      id: "forbes.webp",
     },
     {
-      id: "techcrunch.png",
+      id: "techcrunch.webp",
     },
     {
-      id: "the-new-york-times.png",
+      id: "the-new-york-times.webp",
     },
     {
-      id: "usa-today.png",
+      id: "usa-today.webp",
     },
   ];
 
@@ -27,6 +27,7 @@ function FeaturedComponent() {
               key={logo.id}
               className="featured-img"
               src={`./img/logos/${logo.id}`}
+              alt="pricing plan"
             ></img>
           ))}
         </div>

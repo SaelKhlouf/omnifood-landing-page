@@ -39,7 +39,7 @@ function TestimonialsSectionComponent() {
         <div className="testimonials-list">
           {testimonialsData.map((testimonialData) => (
             <TestimonialComponent
-              key={testimonialsData.personImageId}
+              key={testimonialData.personImageId}
               {...testimonialData}
             ></TestimonialComponent>
           ))}
@@ -50,10 +50,10 @@ function TestimonialsSectionComponent() {
         {Array.from({ length: 12 }, (_, index) => index + 1).map(
           (imageNumber) => {
             return (
-              <figure className="gallery-figure">
+              <figure key={imageNumber} className="gallery-figure">
                 <img
-                  key={imageNumber}
-                  src={`./img/gallery/gallery-${imageNumber}.jpg`}
+                  src={`./img/gallery/gallery-${imageNumber}.webp`}
+                  alt="gallery"
                 ></img>
               </figure>
             );

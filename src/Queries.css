@@ -127,10 +127,6 @@ but inside the curley brackets '{}' => it ema nd rem works as before, 1 rem = 10
       z-index: 2;
     }
 
-    .header {
-      position: relative;
-    }
-
     .header-nav {
       opacity: 0;
       pointer-events: none;
@@ -288,6 +284,11 @@ but inside the curley brackets '{}' => it ema nd rem works as before, 1 rem = 10
 
     .btn-padding-200 {
       padding: 1.2rem 1.6rem;
+    }
+
+    .footer-container {
+      column-gap: 3.2rem;
+      row-gap: 4.8rem;
     }
   }
 }

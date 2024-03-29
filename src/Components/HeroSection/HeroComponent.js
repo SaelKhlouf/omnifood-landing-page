@@ -13,23 +13,23 @@ function HeroComponent() {
           </p>
           <div className="hero-content-links">
             <a
-              href="#"
+              href="#cta"
               className="btn btn-primary btn-padding-200 margin-right-100"
             >
               Start eating well
             </a>
-            <a href="#" className="btn btn-outline btn-padding-200">
+            <a href="#how" className="btn btn-outline btn-padding-200">
               Learn more &darr;
             </a>
           </div>
           <div className="delivered-meals">
             <div className="delivered-meals-customers-images">
-              <img src="./img/customers/customer-1.jpg"></img>
-              <img src="./img/customers/customer-2.jpg"></img>
-              <img src="./img/customers/customer-3.jpg"></img>
-              <img src="./img/customers/customer-4.jpg"></img>
-              <img src="./img/customers/customer-5.jpg"></img>
-              <img src="./img/customers/customer-6.jpg"></img>
+              <img src="./img/customers/customer-1.webp" alt="customer"></img>
+              <img src="./img/customers/customer-2.webp" alt="customer"></img>
+              <img src="./img/customers/customer-3.webp" alt="customer"></img>
+              <img src="./img/customers/customer-4.webp" alt="customer"></img>
+              <img src="./img/customers/customer-5.webp" alt="customer"></img>
+              <img src="./img/customers/customer-6.webp" alt="customer"></img>
             </div>
             <p className="delivered-meals-fact">
               <span className="delivered-meals-number">250,000+</span> meals
@@ -38,7 +38,11 @@ function HeroComponent() {
           </div>
         </div>
 
-        <img src="./img/hero.png" className="hero-image"></img>
+        <img
+          src="./img/hero.webp"
+          className="hero-image"
+          alt="hero image"
+        ></img>
       </div>
     </section>
   );

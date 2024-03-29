@@ -17,7 +17,11 @@ function MealCardComponent({
 }) {
   return (
     <div className="meal-card">
-      <img src={`./img/meals/${id}`} className="meal-card-image"></img>
+      <img
+        src={`./img/meals/${id}`}
+        className="meal-card-image"
+        alt="meal card"
+      ></img>
       <div className="meal-card-content">
         <div className="meal-card-diets-list">
           {diets.map((diet) => {
