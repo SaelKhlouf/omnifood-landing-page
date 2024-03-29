@@ -32,7 +32,8 @@ function FooterComponent() {
             ></IoLogoTwitter>
           </div>
           <p className="footer-copyright">
-            Copyright © 2027 by Omnifood, Inc. All rights reserved.
+            Copyright © 2024 developed by Sael Khlouf in ReactJS, cloned from
+            Jonas Schmedtmann design.
           </p>
         </div>
 
