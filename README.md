@@ -4,9 +4,8 @@ A full design and clone of the original Omnifood website (fictional AI-based mea
 
 It is a **Fully Responsive** website, built using **ReactJS, HTML5, and CSS3.**
 
-## 📌 **Live Site URL:** [**Visit Now** 🚀](https://sael-omnifood.netlify.app/)
+## 🚀 **Live Site URL:** [**Visit Now!**](https://sael-omnifood.netlify.app/)
 
-<br />
 <br />
 <br />
 
